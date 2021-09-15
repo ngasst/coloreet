@@ -1,0 +1,41 @@
+{
+  "name": "coloreet",
+  "version": "1.0.0",
+  "description": "Colors everywhere. Supercharged extension of the popular chalk library. Uses the also popular tailwindcss utility framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && jest -c jest.config.js",
+    "test:watch": "npm run build && jest -c jest.config.js --watch",
+    "build": "npx spack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngasst/coloreet.git"
+  },
+  "keywords": [
+    "color",
+    "colors",
+    "tailwind",
+    "chalk",
+    "terminal"
+  ],
+  "author": "Gaston Ndanyuzwe <ndanyuzwe@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngasst/coloreet/issues"
+  },
+  "homepage": "https://github.com/ngasst/coloreet#readme",
+  "dependencies": {
+    "camelcase": "^6.2.0",
+    "chalk": "^4.1.2",
+    "tailwindcss": "^2.2.15"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.49",
+    "@swc/core": "^1.2.87",
+    "@swc/jest": "^0.2.3",
+    "@types/jest": "^27.0.1",
+    "@types/tailwindcss": "^2.2.1",
+    "jest": "^27.2.0"
+  }
+}
