@@ -2,7 +2,7 @@
   "name": "coloreet",
   "version": "1.0.0",
   "description": "Colors everywhere. Supercharged extension of the popular chalk library. Uses the also popular tailwindcss utility framework.",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "npm run build && jest -c jest.config.js",
     "test:watch": "npm run build && jest -c jest.config.js --watch",
