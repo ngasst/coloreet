@@ -160,6 +160,9 @@ const instance = new Colorize();
 export const colorit = new Proxy(instance, {
   get(target, prop: any) {
     if (prop === 'chalk') return target.chalk;
+    if (target.chalk[prop as keyof typeof target.chalk]) {
+      return target.chalk[prop as keyof typeof target.chalk];
+    }
 
     if (prop === 'colorize') return target.colorize;
 
