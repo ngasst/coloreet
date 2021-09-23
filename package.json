@@ -1,6 +1,6 @@
 {
   "name": "coloreet",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Colors everywhere. Supercharged extension of the popular chalk library. Uses the also popular tailwindcss utility framework.",
   "main": "./lib/index.js",
   "scripts": {
