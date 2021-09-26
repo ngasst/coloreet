@@ -61,8 +61,10 @@ class Colorize {
     const underline = config.underline ?? false;
     const dim = config.dim ?? false;
 
-    if (!string) {
-      throw new Error(`Parameter {string} is required! Received ${string}`);
+    if (typeof string !== 'string') {
+      throw new Error(
+        `Parameter {string} is required and must be of type "string"! Received ${string} of type ${typeof string}`
+      );
     }
     // is tailwind
     if (this.isTailwind(<string>color)) {
